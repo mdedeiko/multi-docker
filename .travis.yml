@@ -1,5 +1,5 @@
 sudo: required
-servises:
+services:
   - docker
 
   before_install:
@@ -19,4 +19,3 @@ servises:
     - docker push mikhaildedeiko/multi-nginx
     - docker push mikhaildedeiko/multi-server
     - docker push mikhaildedeiko/muliti-worker
-    
