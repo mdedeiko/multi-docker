@@ -13,7 +13,6 @@ services:
     - docker build -t mikhaildedeiko/multi-nginx ./nginx
     - docker build -t mikhaildedeiko/multi-server ./server
     - docker build -t mikhaildedeiko/multi-worker ./worker
-
     - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
     - docker push mikhaildedeiko/multi-client
     - docker push mikhaildedeiko/multi-nginx
